@@ -30,9 +30,9 @@ printf("\n\ta | s | d\n\n");
 
 printf("\n\n Escolha um valor para w:");
 scanf("%d", &w);
-while ((w>9)||(w<0))
+while ((w>9)||(w<0)||(w == x))
 {
-    printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
+    printf("Escolha outro!!!");
     printf("\n\n Escolha um valor para w:");
     scanf("%d", &w);
 
@@ -45,7 +45,7 @@ printf("\n\ta | s | d\n\n");
 printf("\n\n Escolha um valor para z:");
 scanf("%d",&z);
 
-while ((z>9)||(z<0))
+while ((z>9)||(z<0)||(z == x )||(w == z))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para z:");
@@ -59,7 +59,7 @@ printf("\n\ta | s | d\n\n");
 
 printf("\n\n Escolha um valor para d:");
 scanf("%d",&d);
-while ((d>9)||(d<0))
+while ((d>9)||(d<0)||(d == w)||(d == z)||(d == x))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para d:");
@@ -73,7 +73,7 @@ printf("\n\ta | s | %d\n\n",d);
 printf("\n\n Escolha um valor para a:");
 scanf("%d",&a);
 
-while ((a>9)||(a<0))
+while ((a>9)||(a<0)||(a == w)||(a == z)||(a == x)||(a == d))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para a:");
@@ -87,7 +87,7 @@ printf("\n\t%d | s | %d\n\n",a,d);
 printf("\n\n Escolha um valor para q:");
 scanf("%d",&q);
 
-while ((q>9)||(q<0))
+while ((q>9)||(q<0)||(q == w)||(q == z)||(q == x)||(q == d)||(q == a))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para q:");
@@ -100,7 +100,7 @@ printf("\n\t%d | s | %d\n\n",a,d);
 
 printf("\n\n Escolha um valor para y:");
 scanf("%d",&y);
-while ((y>9)||(y<0))
+while ((y>9)||(y<0)||(y == w)||(y == z)||(y == x)||(y == d)||(y == a)||(y == q))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para y:");
@@ -113,7 +113,7 @@ printf("\n\t%d | s | %d\n\n",a,d);
 
 printf("\n\n Escolha um valor para s:");
 scanf("%d",&s);
-while ((s>9)||(s<0))
+while ((s>9)||(s<0)||(s == w)||(s == z)||(s == x)||(s == d)||(s == a)||(s == q)||(s == y))
 {
     printf("Valor maior do que nove ou menor que zero, escolha outro!!!");
     printf("\n\n Escolha um valor para s:");
@@ -127,7 +127,7 @@ printf("\n\t%d | %d | %d\n\n",a,s,d);
 printf("\n\n Escolha um valor para e:");
 scanf("%d",&e);
 
-while ((e>9)||(e<0))
+while ((e>9)||(e<0)||(e == w)||(e == z)||(e == x)||(e == d)||(e == a)||(e == q)||(e == y)||(e == s))
 {
     printf("Valor maior do que nove ou menor que um, escolha outro!!!");
     printf("\n\n Escolha um valor para e:");
